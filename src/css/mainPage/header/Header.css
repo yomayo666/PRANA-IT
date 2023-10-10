@@ -51,7 +51,7 @@ z-index: 1;
     transform: translateX(-50%);
     width: 433.333px;
     height: 433.333px;
-    transform: rotate(45.313deg);
+     transform: rotate(45.313deg);
     flex-shrink: 0;
     z-index: 0 ;
   }
