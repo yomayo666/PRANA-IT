@@ -1,6 +1,8 @@
 .blog-cont {
     position: relative;
-    width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 1449.334px;
     border-radius: 48px 48px 0px 0px;
     background: #141620;
@@ -124,9 +126,10 @@ line-height: 80%; /* 0.53331rem */
 text-transform: uppercase;
   }
   .contact-with-us{
+    margin-left: auto;
+    margin-right: auto;
     width: 853.333px;
     height: 666.667px;
-    margin-left: 213.33px;
     margin-top: 180px;
   }
   .map-container{
