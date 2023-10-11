@@ -22,7 +22,7 @@
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: RF Dewi Expanded;
-    font-size: 80px;
+    font-size: 5.62438rem;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 88px */
@@ -53,7 +53,7 @@
 .us-works * h3{
     color: #FFF;
 font-family: RF Dewi Expanded;
-font-size: 28px;
+font-size: 1.9685rem;
 font-style: normal;
 font-weight: 700;
 line-height: 110%; /* 30.8px */
@@ -63,7 +63,7 @@ text-transform: uppercase;
     width: 303.333px;
     color: #FFF;
 font-family: Neue Machina;
-font-size: 18.667px;
+font-size: 0.74994rem;
 font-style: normal;
 font-weight: 300;
 line-height: 100%;
@@ -81,7 +81,7 @@ background: linear-gradient(107deg, rgba(255, 255, 255, 0.20) -13.6%, rgba(255, 
 backdrop-filter: blur(14.666667938232422px);
 color: #FFF;
 font-family: RF Dewi Expanded;
-font-size: 12px;
+font-size: 0.84363rem;
 font-style: normal;
 font-weight: 600;
 line-height: 80%; /* 9.6px */
@@ -150,8 +150,8 @@ backdrop-filter: blur(19.666667938232422px);
     width: 386.667px;
     height: 440px;
     border-radius: 28px;
-background: #E5271F;
-backdrop-filter: blur(19.666667938232422px);
+    background: #E5271F;
+    backdrop-filter: blur(19.666667938232422px);
     background-image: url("../../../assets/mainPage/Studio Session-004-4.png");
 }
 
@@ -166,13 +166,15 @@ backdrop-filter: blur(19.666667938232422px);
   }
   
   .cont:hover p{
-    margin-left: -5%;
+    transition: transform 0.5s ease;
+
     transform: scale(0.87); /* Уменьшаем текст на 15% (1 / 1.15) */
 
   }
   .cont:hover h3{
-
-    margin-left: -7%;
-    transform: scale(0.87); /* Уменьшаем текст на 15% (1 / 1.15) */
+    transition: transform 0.5s ease;
+    margin-left: -1.7%;
+    transform: scale(0.87);
+ /* Уменьшаем текст на 15% (1 / 1.15) */
 
   }

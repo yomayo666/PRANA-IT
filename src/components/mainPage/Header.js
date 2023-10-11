@@ -9,9 +9,9 @@ function Header() {
             <h1>Энергичные решения для<span> вашего бизнеса</span></h1>
             <p className='info-header'>Комплексная разработка онлайн-присутствия компаний</p>
         </div>
-        <div className='eleps3'>
-          <div className='eleps4'></div>
-          <div className='eleps5'></div>
+        <div className='eleps3 eleps-conain'>
+          <div className='eleps4 eleps-conain1'></div>
+          <div className='eleps5 eleps-conain2'></div>
         </div>
       </header>
     );

@@ -2,7 +2,7 @@ import '../../css/mainPage/header/СalculateЕheСost.css';
 import code from "../../assets/mainPage/BlueSvg/codeBlue.svg";
 import box from "../../assets/mainPage/BlueSvg/rombBlue.svg";
 import video from "../../assets/mainPage/BlueSvg/videoBlue.svg";
-import mark from "../../assets/mainPage/Mask group.svg";
+import mark from "../../assets/mainPage/Mask group-white.svg";
 function СalculateЕheСost(){
     return(
         <article className="price-container">

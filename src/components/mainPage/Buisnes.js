@@ -144,8 +144,8 @@ function Buisnes() {
     <article className="for-buisnes" ref={containerRef}>
       <h2 className='for-buisness-h2'>Для <span>любой</span> сферы бизнеса</h2>
       <div className='eleps'>
-          <div className='eleps1'></div>
-          <div className='eleps2'></div>
+          <div className='eleps1 eleps-conain1'></div>
+          <div className='eleps2 eleps-conain2' ></div>
         </div>
       <button
         className={`selling-goods`}

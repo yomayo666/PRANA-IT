@@ -21,7 +21,7 @@
   .main-cont-blog h3 {
     color: var(--ffffff, #FFF);
     font-family: RF Dewi Expanded;
-    font-size: 2.16669rem;
+    font-size: 2.43719rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 2.16669rem */
@@ -33,10 +33,11 @@
     margin-top: 24px;
     color: var(--ffffff, #FFF);
     font-family: Neue Machina;
-    font-size: 0.83331rem;
+    font-size: 0.93738rem;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 1.08331rem */
+    opacity: 0.8;
   }
   
   .continer-for-events {
@@ -93,7 +94,7 @@
     width: 238.667px;
     color: #FFF;
     font-family: Neue Machina;
-    font-size: 1.08331rem;
+    font-size: 0.74994rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 1.19169rem */
@@ -153,7 +154,7 @@ text-transform: uppercase;
   .vacancies-content h4{
 color: var(--ffffff, #FFF);
 font-family: Neue Machina;
-font-size: 1.08331rem;
+font-size: 1.21863rem;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 1.08331rem */
@@ -166,7 +167,7 @@ line-height: 100%; /* 1.08331rem */
 .web-designer h5, .back-end-developer h5{
     color: var(--ffffff, #FFF);
     font-family: Neue Machina;
-    font-size: 0.83331rem;
+    font-size: 0.93738rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 1.08331rem */
@@ -176,6 +177,7 @@ line-height: 100%; /* 1.08331rem */
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
 font-size: 0.66669rem;
+
 font-style: normal;
 font-weight: 300;
 line-height: 120%; /* 0.8rem */
@@ -384,8 +386,8 @@ opacity: 0.6;
     position: relative;
     left: 0%;
     transform: translateX(-50%);
-    width: 433.333px;
-    height: 433.333px;
+    width: 33.854%;
+    height: 33.854%;
     transform: rotate(45.313deg);
     flex-shrink: 0;
     z-index: -1;

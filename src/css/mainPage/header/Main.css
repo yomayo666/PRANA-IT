@@ -2,7 +2,6 @@
 
 
 .main-container {
-    background: #141620;
     display: flex;
     justify-content: center;
     position: fixed; /* Начальное состояние: абсолютное позиционирование */
@@ -73,7 +72,7 @@
     padding-left: 10px;
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
-font-size: 28px;
+font-size: 1.9685rem;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 28px */
@@ -81,7 +80,7 @@ line-height: 100%; /* 28px */
 .main-container * h4{
     color: var(--ffffff, #FFF);
     font-family: Neue Machina;
-    font-size: 16px;
+    font-size: 1.12488rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 16px */
@@ -89,7 +88,7 @@ line-height: 100%; /* 28px */
 .main-container * p{
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
-font-size: 10.667px;
+font-size: 0.74994rem;
 font-style: normal;
 font-weight: 300;
 line-height: 130%; /* 13.867px */
@@ -116,7 +115,7 @@ opacity: 0.8;
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: RF Dewi Expanded;
-    font-size: 80px;
+    font-size: 5.62438rem;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
