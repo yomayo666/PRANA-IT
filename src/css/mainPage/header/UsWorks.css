@@ -28,6 +28,9 @@
     line-height: 110%; /* 88px */
     letter-spacing: 1.6px;
 }
+.title-us-works.not-fixed{
+    margin-top: 1200px;
+}
 .firs-div{
     margin-top: 27px;
 }

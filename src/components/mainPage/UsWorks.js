@@ -2,7 +2,7 @@ import "../../css/mainPage/header/UsWorks.css";
 import React, { useEffect, useState } from "react";
 
 function UsWorks() {
-  const [isFixed, setIsFixed] = useState(true);
+  const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -10,7 +10,7 @@ function UsWorks() {
         setIsFixed(true);
       } else {
         setIsFixed(false);
-      }
+      } 
     };
 
     window.addEventListener("scroll", handleScroll);
