@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/PRANA-IT/static/css/main.17b296d9.css",
+    "main.js": "/PRANA-IT/static/js/main.fa378b7c.js",
+    "static/js/651.d9ae34ac.chunk.js": "/PRANA-IT/static/js/651.d9ae34ac.chunk.js",
+    "static/media/Mask foto-parf.png": "/PRANA-IT/static/media/Mask foto-parf.f0b2a5204ada746f8af7.png",
+    "static/media/headerIMG.png": "/PRANA-IT/static/media/headerIMG.9c9c0ac466f247c4ee26.png",
+    "static/media/image 188.png": "/PRANA-IT/static/media/image 188.7683f97fb078ad6058b8.png",
+    "static/media/чай-455.png": "/PRANA-IT/static/media/чай-455.b315710080bfaa8d7d7b.png",
+    "static/media/Mask group.png": "/PRANA-IT/static/media/Mask group.fd74739aa0d0c267f77b.png",
+    "static/media/image 186.png": "/PRANA-IT/static/media/image 186.52e9510b595e3a7f54bd.png",
+    "static/media/Mask group fringe.png": "/PRANA-IT/static/media/Mask group fringe.07b7505acc29aa25e8fc.png",
+    "static/media/NeueMachina-Regular.otf": "/PRANA-IT/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
+    "static/media/RFDewiExtended-Semibold.woff2": "/PRANA-IT/static/media/RFDewiExtended-Semibold.55b90fc24a6c4c82b10c.woff2",
+    "static/media/firm.svg": "/PRANA-IT/static/media/firm.da7fab0537cc8d155af630a6d864e9c8.svg",
+    "static/media/codeBlue.svg": "/PRANA-IT/static/media/codeBlue.a5cf2b6c9fbd3fe5f41f875855d1e87b.svg",
+    "static/media/Code.svg": "/PRANA-IT/static/media/Code.3fa34cba3d0a5b599875e8a77793b404.svg",
+    "static/media/rombBlue.svg": "/PRANA-IT/static/media/rombBlue.19f4aebb7a5b2d34ed52ee00563134ca.svg",
+    "static/media/BoundingBox.svg": "/PRANA-IT/static/media/BoundingBox.1ffc0ca757d4c4d43e3370d981615ead.svg",
+    "static/media/videoBlue.svg": "/PRANA-IT/static/media/videoBlue.d00d6bee68e702730e6d6ecfc6ffe303.svg",
+    "static/media/Video.svg": "/PRANA-IT/static/media/Video.4ae8bffef0efaf3721e3a9bab6cb7505.svg",
+    "static/media/burgerButton.svg": "/PRANA-IT/static/media/burgerButton.a59e9beb03975d0ff374b56e44f2e4bd.svg",
+    "index.html": "/PRANA-IT/index.html",
+    "static/media/Mask group.svg": "/PRANA-IT/static/media/Mask group.ba934438b925e5c97e9b8e270ec56c88.svg",
+    "main.17b296d9.css.map": "/PRANA-IT/static/css/main.17b296d9.css.map",
+    "main.fa378b7c.js.map": "/PRANA-IT/static/js/main.fa378b7c.js.map",
+    "651.d9ae34ac.chunk.js.map": "/PRANA-IT/static/js/651.d9ae34ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17b296d9.css",
+    "static/js/main.fa378b7c.js"
+  ]
+}
