@@ -1,118 +1,122 @@
 .for-buisnes {
-  position: absolute;
+  margin-top: 700px;
+  position: relative;
   background: #141620;
-  top: 1400px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
+  max-width: 100%;
   height: 551.348px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .for-buisnes button {
-  position: absolute;
-  padding: 28px 34.667px;
+  padding: 2vw 2.4vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6.667px;
   border-radius: 21.333px;
-  border-radius: 21.333px;
-background: rgba(28, 30, 42, 0.50);
-backdrop-filter: blur(19.666664123535156px);
-color: var(--ffffff, #FFF);
-font-family: Neue Machina;
-font-size: 21.333px;
-font-style: normal;
-font-weight: 500;
-line-height: 100%;
-opacity: 0.6;
+  background: rgba(28, 30, 42, 0.50);
+  backdrop-filter: blur(19.666664123535156px);
+  color: var(--ffffff, #FFF);
+  font-family: Neue Machina;
+  font-size: 1.49981rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  opacity: 0.6;
 }
 
-
-.selling-goods {
-  top: 0%;
+.for-buisnes .selling-goods {
+  position: relative;
+  top: 0;
   left: 40%;
 }
 
-.сoffee-shops {
+.for-buisnes .сoffee-shops {
+  position: relative;
   left: 70%;
   top: 20%;
 }
 
-.franchises {
+.for-buisnes .franchises {
+  position: relative;
   left: 10%;
   top: 10%;
 }
 
-.repair-and-construction {
+.for-buisnes .repair-and-construction {
+  position: relative;
   left: 50%;
   top: 50%;
 }
 
-.real-estate {
+.for-buisnes .real-estate {
+  position: relative;
   left: 0%;
   top: 80%;
 }
 
-.infobusiness {
-  left: 80%;
+.for-buisnes .infobusiness {
+  position: relative;
+  left: 0%;
   top: 60%;
 }
 
-.cars {
+.for-buisnes .cars {
+  position: relative;
   left: 65%;
   top: 80%;
 }
 
-.marketing-agencies {
+.for-buisnes .marketing-agencies {
+  position: relative;
   left: 30%;
   top: 25%;
 }
 
-.restaurants-and-cafes {
+.for-buisnes .restaurants-and-cafes {
+  position: relative;
   left: 20%;
   top: 60%;
 }
-.for-buisness-h2{
+
+.for-buisnes .for-buisness-h2 {
+  top: 25%;
   position: absolute;
   color: var(--ffffff, #FFF);
-text-align: center;
-font-family: RF Dewi Expanded;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: 110%; /* 88px */
-letter-spacing: 1.6px;
-}
-.for-buisness-h2 span{
-  color: var(--40-b-6-b-7, #40B6B7);
+  text-align: center;
   font-family: RF Dewi Expanded;
-  font-size: 80px;
+  font-size: 5.62438rem;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
   letter-spacing: 1.6px;
+}
 
+.for-buisnes .for-buisness-h2 span {
+  color: var(--40-b-6-b-7, #40B6B7);
+  font-family: RF Dewi Expanded;
+  font-size: 5.62438rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1.6px;
 }
-.eleps{
-  top: 20%;
-  position: absolute;
-  left: 30%;
-  transform: translateX(-50%);
-  width: 433.333px;
-  height: 433.333px;
-  transform: rotate(45.313deg);
+
+.eleps-main {
+  z-index: 0;
+  position: relative;
+  width: 30vh; /* Задаем ширину в 30% ширины экрана */ /* Минимальная ширина, чтобы не сжимался слишком узко */
+  height: 30vh;
+  transform: translateX(-50%) rotate(42.313deg); /* Оба трансформации в одной строке */
   flex-shrink: 0;
-  z-index: -1;
+  z-index: 0;
+  left: 50%; /* Выравнивание по центру горизонтали */
+  top: 130px;
 }
-.eleps1{
+.eleps-main1{
   position: absolute;
-  width: 407.637px;
+  width: 100%;
   height: 311.883px;
-  transform: rotate(-15.697deg);
+  transform: rotate(15.697deg);
   flex-shrink: 0;
   border-radius: 407.637px;
   opacity: 0.3;
@@ -120,15 +124,38 @@ letter-spacing: 1.6px;
   mix-blend-mode: screen;
   filter: blur(82.61548614501953px);
 }
-.eleps2{
+.eleps-main2{
   position: absolute;
-  width: 311.883px;
+  width: 100%;
 height: 407.637px;
-transform: rotate(15.303deg);
+transform: rotate(15.697deg);
 flex-shrink: 0;
 border-radius: 407.637px;
 opacity: 0.3;
 background: #33229A;
 mix-blend-mode: screen;
 filter: blur(82.61548614501953px);
+
+}
+@media (max-width: 1200px){
+  .eleps-main{
+    left: 45%;
+  }
+}
+@media (max-width: 724px){
+  .for-buisnes{
+    margin-top: 1400px;
+  }
+}
+@media (max-width: 500px){
+  .for-buisnes .for-buisness-h2{
+    font-size: 3rem;
+  }
+  .for-buisnes .for-buisness-h2 span{
+    font-size: 3rem;
+  }
+  .for-buisnes button{
+    font-size: 1rem;
+    padding: 18px 24px;
+  }
 }

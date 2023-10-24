@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../../css/mainPage/header/Buisnes.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Buisnes() {
   const buttonRefs = useRef([]);
@@ -53,7 +54,7 @@ function Buisnes() {
             setButtonsData((prevButtonsData) =>
               prevButtonsData.map((data) =>
                 data.id === buttonData.id
-                  ? { ...data, animationSpeed: buttonData.animationSpeed - 0.01 }
+                  ? { ...data, animationSpeed: buttonData.animationSpeed - 0.001 }
                   : data
               )
             );
@@ -120,7 +121,7 @@ function Buisnes() {
       document.removeEventListener('mouseup', handleMouseUp);
 
       const mouseVelocity = Math.sqrt(Math.pow(buttonData.velocity.x, 2) + Math.pow(buttonData.velocity.y, 2));
-      const maxVelocity = 1;
+      const maxVelocity = 0.2;
       const limitedVelocity = Math.min(maxVelocity, mouseVelocity);
 
       setButtonsData((prevButtonsData) =>
@@ -141,11 +142,15 @@ function Buisnes() {
   };
 
   return (
+    <Container>
+      <Row>
+      <Col></Col>
+        <Col xl={8} lg={12}>
     <article className="for-buisnes" ref={containerRef}>
       <h2 className='for-buisness-h2'>Для <span>любой</span> сферы бизнеса</h2>
-      <div className='eleps'>
-          <div className='eleps1'></div>
-          <div className='eleps2'></div>
+      <div className='eleps-main'>
+          <div className='eleps-main1'></div>
+          <div className='eleps-main2' ></div>
         </div>
       <button
         className={`selling-goods`}
@@ -247,6 +252,10 @@ function Buisnes() {
           Маркетинговые агенства
         </button>
     </article>
+    </Col>
+    <Col></Col>
+    </Row>
+    </Container>
   );
 }
 
