@@ -1,8 +1,9 @@
 .header {
+  z-index: 1000;
   width: 100%;
-  height: 90vh;
+  height: auto;
   background: #696f9109;
-  background-image: url("../../../assets/mainPage/headerIMG.png");
+  background-image: url("../../../assets/mainPage/BlueSvg/headerIMG.png");
   background-position: center center; /* Устанавливаем изображение по центру */
   background-repeat: no-repeat; /* Предотвращаем повторение изображения */
   background-size: cover; /* Масштабируем изображение, чтобы оно покрывало всю область .header */
@@ -33,7 +34,6 @@ z-index: 1;
 }
 .header-container{
     margin-top: 120px;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,8 +48,57 @@ z-index: 1;
     opacity: 1; /* Удалите или измените это свойство */
     z-index: 1999;
   }
-.eleps3{
-    top: 15%;
+  .eleps33 {
+    top: -300px;
+    z-index: 0;
+    position: relative;
+    width: 30vh; /* Задаем ширину в 30% ширины экрана */ /* Минимальная ширина, чтобы не сжимался слишком узко */
+    height: 30vh;
+    transform: translateX(-50%) rotate(42.313deg); /* Оба трансформации в одной строке */
+    flex-shrink: 0;
+    z-index: 0;
+    left: 50%; /* Выравнивание по центру горизонтали */
+  }
+  .eleps4{
     position: absolute;
-    left: 40%;
+    width: 100%;
+    height: 407.637px;
+    transform: rotate(15.697deg);
+    flex-shrink: 0;
+    border-radius: 407.637px;
+    opacity: 0.3;
+    background: #40B6B7;
+    mix-blend-mode: screen;
+    filter: blur(82.61548614501953px);
+  }
+  .eleps5{
+    position: absolute;
+    width: 100%;
+  height: 407.637px;
+  transform: rotate(15.697deg);
+  flex-shrink: 0;
+  border-radius: 407.637px;
+  opacity: 0.3;
+  background: #33229A;
+  mix-blend-mode: screen;
+  filter: blur(82.61548614501953px);
+  
+  }
+  
+  @media (max-width: 768px){
+    .eleps33{
+      top: -400px;
+    }
+  }
+
+  @media (max-width: 500px){
+    h1{
+      font-size: 2.375rem;
+    }
+    h1 span{
+      font-size: 2.375rem;
+    }
+    .header-container p{
+      font-size: 1rem;
+    }
   }

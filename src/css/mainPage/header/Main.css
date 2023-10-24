@@ -1,70 +1,74 @@
-
-
-
 .main-container {
     display: flex;
-    justify-content: center;
-    position: fixed; /* Начальное состояние: абсолютное позиционирование */
-    top: 500px; /* Фиксировать сверху */
-    left: 0;
-    right: 0;
-    z-index: 999;
-    opacity: 0.1; /* Изначальная прозрачность (полностью видимый) */
-    transition: opacity 0.5s ease, top 0.5s ease; /* Плавное изменение прозрачности и положения top */
-  }
-  /* Стили для .main-container в состоянии not-fixed */
-  .main-container.not-fixed {
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-    position: absolute; /* Обычное абсолютное позиционирование (не фиксирован) */
-    top: calc(500px + 100px); /* При прокрутке вниз, смещаем .main-container вниз на 100px */
-    opacity: 1; /* Прозрачность, когда не фиксирован */
-    /* Другие стили по вашему выбору */
-  }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центрирование по вертикали и горизонтали */
+    position: absolute;
+    min-width: 300px;
+    margin-top: 300px;
+    min-width:900px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-.development-div{
-    display: flex;
-    align-self: center
 }
-.box-div{
-    display: flex;
-    align-self: center
+.main-container.fixed{
+    margin-top: 250px;
+    position: fixed;
+    transition: opacity 0.5s ease, left 0.5s ease, top 0.5s ease;
+    background: linear-gradient(to bottom, rgba(28, 30, 42, 0) 100%, rgba(28, 30, 42, 1) 100%);
+    backdrop-filter: blur(16.666669845581055px);
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%);
 }
-.player-div{
+.main-container.not-fixed{
+    margin-top: 550px;
+    position: absolute;
+}
+
+.services-container {
     display: flex;
-    align-self: center
+    justify-content: space-between;
+}
+
+/* Стили для .main-container в состоянии not-fixed */
+
+
+/* Добавьте стили для каждой из колонок, чтобы убрать отступы справа */
+.development-article, .design-article, .creative-article {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-right: 0;
+    width: 30%; /* Треть ширины контейнера */
 }
 .development-article {
+    flex-grow: 1;
     padding-left: 20px;
     padding-top: 20px;
-    width: 266.667px;
-    height: 321.333px;
+    height: 360.333px;
     border-radius: 28px;
     background: rgba(28, 30, 42, 0.50);
     backdrop-filter: blur(16.666669845581055px);
-    z-index: 2;
 }
 .design-article {
+    flex-grow: 1;
     padding-left: 20px;
     padding-top: 20px;
     margin-top: 66px;
-    width: 266.667px;
-    height: 321.333px;
+    height: 360.333px;
     border-radius: 28px;
     background: rgba(28, 30, 42, 0.50);
     backdrop-filter: blur(16.666669845581055px);
-    z-index: 2;
+
 }
 .creative-article {
+    flex-grow: 1;
     padding-left: 20px;
     padding-top: 20px;
-    width: 266.667px;
-    height: 321.333px;
+    height: 360.333px;
     border-radius: 28px;
     background: rgba(28, 30, 42, 0.50);
     backdrop-filter: blur(16.666669845581055px);
-    z-index: 2;
 }
 
 .main-container * h3{
@@ -95,7 +99,7 @@ line-height: 130%; /* 13.867px */
 opacity: 0.8;
 }
 .main-container * hr{
-    width: 226.667px;
+    width: 90%;
     height: 0.667px;
     color: rgba(255, 255, 255, 0.20);
 }
@@ -122,5 +126,119 @@ opacity: 0.8;
     letter-spacing: 1.6px;
   }
   
+.player-div, .development-div, .box-div{
+    display: flex;
+}
+  @media (max-width: 900px){
+    .main-container{
+        min-width: 0px;
+        width: 80%;
+        overflow-x: auto;
+        overflow-y: none;
+    }
+    .main-container.fixed .development-article,.main-container.fixed .design-article,.main-container.fixed .creative-article{
+        margin-right: 30px;
+        /* Удалите width: 50; и замените его на min-width */
+    }
+    .services-container {   
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: none;
+        
+      }
+      .development-article, .design-article, .creative-article{
+        margin-bottom: 30px;
+        margin-right: 30px;
+        min-width: 43%;
+        /* Удалите width: 50; и замените его на min-width */
+      }
+      .development-article p, .design-article p, .creative-article p{
+        font-size: 0.875rem;
+        /* Удалите width: 50; и замените его на min-width */
+      }
+      .development-article,  .creative-article{
+        margin-top: 66px;
+      }
+      ::-webkit-scrollbar {
+        height: 2px;
+        width: 2px; /* Здесь вы можете установить желаемую ширину */
+      }
+      
+      /* Устанавливаем цвет фона полосы прокрутки */
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.20);; /* Замените на желаемый цвет фона */
+      }
+      
+      /* Устанавливаем цвет полосы прокрутки */
+      ::-webkit-scrollbar-thumb {
+        background: #40B6B7 /* Замените на желаемый цвет полосы */
+      }
+  }
   
-  
+
+  @media (max-width: 721px){
+    .div-h2{
+        display: none;
+    }
+    .main-container{
+        height: 1200px;
+        top: 800px;
+        
+    }
+    .development-article, .design-article, .creative-article{
+        margin-left: 0px;
+        min-width: 80%;
+        margin-top: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        /* Удалите width: 50; и замените его на min-width */
+      }
+      .services-container{
+        flex-direction: column; /* Устанавливаем направление контейнера на вертикальное */
+        justify-content: center; /* Выравнивание элементов по центру по вертикали */
+        align-items: center; /* Выравнивание элементов по центру по горизонтали */
+    }
+    .main-container.fixed .development-article,.main-container.fixed .design-article,.main-container.fixed .creative-article{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  }
+
+  @media (max-width: 450px){
+    .development-article, .design-article, .creative-article{
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 100%;
+        /* Удалите width: 50; и замените его на min-width */
+      }
+  }
+  @media (max-width: 359px){
+    .development-article, .design-article, .creative-article{
+        padding-bottom: 300px;
+        /* Удалите width: 50; и замените его на min-width */
+      }
+      .main-container * h3{
+        font-size: 1.5rem;
+      }
+      .main-container * h4{
+        font-size: 1.125rem;
+      }
+      .main-container * p{
+        font-size: 0.875rem;
+      }
+    }
+    @media (max-width: 320px){
+        .main-container{
+            height: 1400px;
+            top: 800px;
+            
+        }
+        .development-article, .design-article, .creative-article{
+            padding-bottom: 390px;
+            /* Удалите width: 50; и замените его на min-width */
+          }
+    }

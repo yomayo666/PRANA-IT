@@ -1,19 +1,14 @@
 .price-container{
-    margin-top: 200px;
-    width: 100%;
-    height: 1062.667px;
     border-radius: 48px 48px 0px 0px;
     background: #12141D;
+    min-height: auto;
+    padding-bottom: 100px;
 }
 .us-price{
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 80px;
-    width: 853.333px;
-    height: 854px;
 }
 .header-price-div h3{
-    width: 600px;
+    width: 70%;
     color: var(--ffffff, #FFF);
     font-family: RF Dewi Expanded;
     font-size: 2.43719rem;
@@ -23,20 +18,12 @@
     letter-spacing: 0.693px;
 }
 .header-price-div p{
-    padding-top: 24px;
-    width: 413.333px;
-    color: var(--ffffff, #FFF);
-    font-family: Neue Machina;
-    font-size: 0.84363rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 130%; /* 17.333px */
-    opacity: 0.8;
+   width: 10%;
+  padding-top: 24px;
 }
 .development-price-div, .design-price-div, .motion-price-div{
     position: relative;
     display: flex;
-    width: 849.333px;
     height: 66.667px;
 
 }
@@ -64,10 +51,6 @@
     font-weight: 300;
     line-height: 130%; /* 15.6px */
     opacity: 0.8;
-}
-
-.development-price-div p{
-    padding-left: 75px;
 }
 .parent-container-checkbox{
     position: absolute;
@@ -119,30 +102,31 @@
     background-color: white; /* Изменение цвета на белый при активации */
     transform: translateX(100%);
   }
-  .design-price-div p{
-    padding-left: 140px;
-  }
   .check-price-container{
     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 128px;
+    min-height: auto;
+    transition: background-color 0.5s;
   }
   .check-price-container div{
     position: relative;
-    width: 266.667px;
+    width: 30%;
+    min-width: 208px;
+
     height: 128px;
     border-radius: 28px;
     background: #181A25;
-  }
-  .check-price-container div {
+        position: relative;
     padding-left: 20px;
     padding-top: 20px;
   }
+
   .check-price-container div h5 {
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
-font-size: 17.333px;
+font-size: 1.125rem;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 17.333px */
@@ -151,17 +135,17 @@ line-height: 100%; /* 17.333px */
     opacity: 0.6;
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
-font-size: 10.667px;
+font-size: 0.6rem;
 font-style: normal;
 font-weight: 300;
 line-height: 120%; /* 12.8px */
-opacity: 0.8;
   }
   .check-price-container div label {
+    cursor: pointer;
+    z-index: 99;
     position: absolute;
     bottom: 20px;
-    left: 30px;
-    padding-left: 8px;
+    left: 40px;
     color: var(--ffffff, #FFF);
 font-family: Neue Machina;
 font-size: 12px;
@@ -171,22 +155,16 @@ line-height: 100%; /* 12px */
 opacity: 0.6;
   }
   .check-price-container input{
+    cursor: pointer;
     position: absolute;
     bottom: 20px;
   }
-  .check-price-p1{
-    max-width: 200px;
-  }
-  .check-price-p2{
-    max-width: 187.333px;
-  }
+  .check-price-p1,
+  .check-price-p2,
   .check-price-p3{
-    max-width: 200px;
+    max-width: 80%;
   }
-  .motion-price-div p{
-    padding-left: 144.67px;
-    width: 450px
-  }
+
   .container-for-button{
     display: flex;
     justify-content: center; /* Горизонтальное выравнивание по центру */
@@ -206,14 +184,146 @@ font-size: 1.12488rem;
 font-style: normal;
 font-weight: 700;
 line-height: 130%; /* 20.8px */
+transition: background-color 0.5s;
   }
-  .need-consultation-mark{
-    max-height: 16px;
-    z-index: 1000;
-  }
+
   .price-container hr {
     /* Ваши стили для <hr> элементов */
     margin-top: 30px;
     padding: 10px;
     border-top: 1px solid #D9D9D9; /* Добавить стиль вертикальной линии */
   }
+  .development-price-div p,
+  .design-price-div p,
+  .motion-price-div p
+  {
+    width: 150%;
+}
+.need-consultation:hover{
+  background: #4CCECF;
+}
+.need-consultation:active{
+  background: #328F8F;
+}
+.need-consultation:hover .arr-svg-button {
+  animation: moveUp 0.3s forwards;
+}
+
+@keyframes moveUp {
+  0%, 100% {
+    transform: translateY(0);
+    fill: #FFFFFF;
+  }
+  50% {
+    transform: translateY(-10px);
+    fill: #FFFFFF;
+  }
+}
+
+@media (max-width: 1200px) {
+  .us-price p {
+    padding-top: 25px;
+    width: 90%;
+  }
+  .development-price-div, .design-price-div, .motion-price-div{
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .check-price-container div p{
+    width: 100%;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .check-div-logo, .check-div-branding, .check-div-design{
+    min-height: 150px;
+  }
+}
+@media (max-width: 768px){
+  .check-div-logo, .check-div-branding, .check-div-design{
+    min-height: 100px;
+  }
+  .check-price-container div{
+    width: 48%;
+  }
+  .check-price-container{
+    align-content: space-between;
+    height: 280px;
+  }
+
+}
+@media (max-width: 567px) {
+  .need-consultation{
+    font-size: 1rem;
+    min-width: 80%;
+  }
+  .check-price-container div{
+    width: 100%;
+  }
+  .check-price-container{
+    align-content: space-between;
+    height: 330px;
+  }
+  :root {
+    --40-b-6-b-7: #40B6B7; /* Замените #40B6B7 на желаемый цвет */
+  }
+  .check-div-logo, .check-div-branding, .check-div-design {
+    max-height: 100px;
+    position: relative;
+    transition: border 0.5s;
+    border: 2px solid transparent;
+  }
+  
+  .check-price-container input{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+  .check-price-container label{
+    display: none;
+  }
+  .development-price-div, .design-price-div, .motion-price-div{
+    padding-bottom: 130px;
+  }
+  
+}
+@media (max-width: 330px){
+  .development-price-div, .design-price-div, .motion-price-div{
+    padding-bottom: 200px;
+  }
+  .price-container{
+    height: 1800px;
+  }
+
+  
+}
+.check-div-logo,
+.check-div-branding,
+.check-div-design {
+  transition: border 0.5s;
+  border: 2px solid transparent;
+}
+
+.check-div-logo:hover,
+.check-div-branding:hover,
+.check-div-design:hover {
+  border: 2px solid #40B6B7; /* Здесь #40B6B7 - это цвет границы при наведении */
+  cursor: pointer;
+}
+.checkbox-block-container {
+  opacity: 0;
+
+  overflow: hidden;
+  transition: opacity 1s, max-height 1s;
+}
+
+.checkbox-block-container.visible {
+  opacity: 1; 
+  min-height: auto; /* Или min-height: 100%; */
+}
+.need-consultation {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавное изменение цвета фона и текста в течение 0.3 секунд */
+}
+
+
+

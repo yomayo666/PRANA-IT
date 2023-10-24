@@ -1,29 +1,20 @@
 import "../../css/mainPage/header/UsWorks.css";
-import React, { useEffect, useState } from "react";
+import { Container, Col, Row} from 'react-bootstrap';
 
 function UsWorks() {
-  const [isFixed, setIsFixed] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 1300 && window.scrollY < 2750) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      } 
-    };
 
-    window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
+    <>
+    {/* <h2 className={`title-us-works ${isFixed ? 'fixed' : 'not-fixed'}`}>Наши работы</h2> */}
+    <Container>
+      <Row>
+      <Col></Col>
+        <Col xl={8}>
     <article className="us-works">
-      <h2 className={`title-us-works ${isFixed ? 'fixed' : 'not-fixed'}`}>Наши работы</h2>
-      <div className="firs-div">
+    <div className="firs-div">  
         <div className="cont-1 cont">
             <h3>FRINGE</h3>
             <p>Программирование бизнес процессов на основе нейронных сетей</p>
@@ -77,6 +68,11 @@ function UsWorks() {
         </div>
       </div>
     </article>
+    </Col>
+    <Col></Col>
+    </Row>
+    </Container> 
+    </>
   );
 }
 export default UsWorks
