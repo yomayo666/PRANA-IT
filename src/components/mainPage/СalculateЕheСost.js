@@ -16,7 +16,8 @@ function СalculateЕheСost() {
       isCheckboxBlockVisible1 || isCheckboxBlockVisible2 || isCheckboxBlockVisible3
     );
   }, [isCheckboxBlockVisible1, isCheckboxBlockVisible2, isCheckboxBlockVisible3]);
-
+/*   "build": "react-scripts build",
+  "start": "react-scripts start", */
   useEffect(() => {
     updateAnyCheckboxChecked();
   }, [updateAnyCheckboxChecked]);
@@ -25,7 +26,7 @@ function СalculateЕheСost() {
     : "НУЖНА КОНСУЛЬТАЦИЯ";
   return (
     <article className="price-container">
-      <Container>
+        <Container>
         <Row>
           <Col>1 of 3</Col>
           <Col xl={8}>
