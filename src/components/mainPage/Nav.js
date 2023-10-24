@@ -12,7 +12,12 @@ function Navi() {
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
-  };
+    if (isNavOpen) {
+      document.body.classList.remove('overflow-hidden');
+    } else {
+      document.body.classList.add('overflow-hidden');
+    }
+  }
 
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -53,9 +58,10 @@ function Navi() {
                       </g>
                     </svg>
                   </Link>
-                </Nav>
+                  </Nav>
               </Navbar.Collapse>
             </Navbar>
+            <div className={`overlay ${isNavOpen ? 'active' : ''}`} onClick={toggleNav}></div>
           </Col>
           <Col></Col>
         </Row>

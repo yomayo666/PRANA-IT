@@ -102,3 +102,6 @@ z-index: 1;
       font-size: 1rem;
     }
   }
+  .burger-icon{
+    z-index: 999;
+  }
